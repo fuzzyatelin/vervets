@@ -35,4 +35,13 @@ You can install the development version of vervets from [GitHub](https://github.
 pak::pak("fuzzyatelin/vervets")
 ```
 
+## Citation
+
+To cite the *vervets* package, please use:
+
+```{r,eval=F}
+citation("vervets")
+```
+
+
 

@@ -37,3 +37,11 @@ You can install the development version of vervets from
 # install.packages("pak")
 pak::pak("fuzzyatelin/vervets")
 ```
+
+## Citation
+
+To cite the *vervets* package, please use:
+
+``` r
+citation("vervets")
+```
