@@ -1,11 +1,11 @@
 Package: vervets
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Access and Analyze the International Vervet Research Consortium Dataset
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Christopher A", "Schmitt",
+      email = "caschmit@bu.edu",
       role = c("aut", "cre")
     )
   )
@@ -14,3 +14,5 @@ Description: More about what it does (maybe more than one line).
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
+URL: https://github.com/fuzzyatelin/vervets
+BugReports: https://github.com/fuzzyatelin/vervets/issues
