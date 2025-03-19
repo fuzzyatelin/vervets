@@ -104,10 +104,11 @@ used to replicate key analyses from papers published by IVRC members,
 including:
 
 - `Turner1997`, which can be used to replicate the [Turner et
-  al. (1997)]() paper on vervet monkey body size and growth in Kenya.
+  al. (1997)](https://doi.org/10.1002/(SICI)1096-8644(199705)103:1%3C19::AID-AJPA3%3E3.0.CO;2-8)
+  paper on vervet monkey body size and growth in Kenya.
 - `Turner2018`, which can be used to replicate the [Turner et
-  al. (2018)]() paper on savanna monkey body size and growth across
-  their whole range.
+  al. (2018)](https://doi.org/10.1002/ajpa.23459) paper on savanna
+  monkey body size and growth across their whole range.
 
 ## Citation
 
