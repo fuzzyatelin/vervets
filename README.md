@@ -147,7 +147,9 @@ members, including:
   *C. pygerythrus pygerythrus* in South Africa, and *C. sabaeus* in
   St. Kitts & Nevis), which can be used to replicate the [Turner *et
   al.* (2018)](https://doi.org/10.1002/ajpa.23459) paper on savanna
-  monkey body size and growth across their whole range.
+  monkey body size and growth across their whole range (see [Schmitt *et
+  al.* (2021)](https://doi.org/10.5061/dryad.vt4b8gtss) for associated R
+  code).
 
 For these morphological datasets, we follow the protocol recommendations
 of the [Bones and Behavior Working
@@ -158,7 +160,56 @@ Turner *et al.* (1997), and further described by Turner *et al.* (2018).
 
 ### Genetic/Genomic Datasets
 
-Details to come!
+One of the key foci of the IVRC was to develop savanna monkeys as a
+genetic/genomic resource. In fact, we chose savanna monkeys in part due
+to their relatively unique population history, which makes them
+particularly compelling as a genetic model system. This includes their
+wide ecogeographic range across Africa, of course, but also a key
+bottleneck that occurred when green monkeys (*Chlorocebus sabaeus*) were
+opportunistically brought to the Caribbean from West Africa during the
+Trans-Atlantic slave trade ~400 years ago. These monkeys quickly adapted
+to the islands and soon took root, but with very reduced genetic
+diversity, making them a great system in which to establish connections
+between trait variation and the genetic variation that might underlie
+it.
+
+#### Captive Genetic/Genomic Data
+
+A second bottleneck occurred when 67 of those monkeys from St. Kitts
+were brought to the United States to create a captive research colony at
+the University of California - Los Angeles in the mid-1970’s. The
+[Vervet Research
+Colony](https://school.wakehealth.edu/departments/pathology/comparative-medicine/vervet-research-colony)
+(now housed at the Wake Forest School of Medicine) is a captive breeding
+colony of ~250 green monkeys with an extensive pedigree dating back to
+the initial founding of the colony. With over 1,000 monkeys pedigreed,
+721 of which are whole genome sequenced, the colony a fantastic system
+for investigating genetic links to behavior and biology, particularly in
+biomedical contexts. The VRC data, however, are generally not publicly
+available are so are not available in this package.
+
+#### Wild Genetic/Genomic Data
+
+The IVRC has generated both a [reference sequence (ChlSab
+1.1)](https://pubmed.ncbi.nlm.nih.gov/26377836/) and [whole genome
+population resequencing](https://pubmed.ncbi.nlm.nih.gov/29083404/) for
+163 wild savanna monkeys. Including raw sequencing reads in this package
+would make it prohibitively large, but the package includes instructions
+for how to access those raw data for download (i.e., links to SRAs in
+free online repositories) and for how to download those data directly
+into R.
+
+We also include a published VCF (Variant Call Format) data set of the
+population resequencing for 163 individuals, called `Svardal2017`, along
+with an associated `vervet population panel` file to link sex and
+population assignments to the whole genome VCF data.
+
+These data can be used as a teaching dataset for population genetics
+(see [Schmitt *et al.* (2022)](https://doi.org/10.5061/dryad.k3j9kd59z)
+for associated R code), or be combined with our other datasets to set up
+novel analyses of selection in relation to climatic or phenotypic data
+(as in [Gagnon *et al.*,
+2022](https://royalsocietypublishing.org/doi/10.1098/rspb.2022.1254)).
 
 ### Biological Sample Repositories
 
