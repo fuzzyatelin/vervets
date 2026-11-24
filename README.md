@@ -138,11 +138,11 @@ members, including:
 }
 </style>
 
-- `Turner1997`, representing a subset of 367 vervet monkeys from four
+- `turner97`, representing a subset of 367 vervet monkeys from four
   sites in Kenya, which can be used to replicate the [Turner *et al.*
   (1997)](https://doi.org/10.1002/(SICI)1096-8644(199705)103:1%3C19::AID-AJPA3%3E3.0.CO;2-8)
   paper on vervet monkey body size and growth.
-- `Turner2018`, representing a subset of 1,253 savanna monkeys from four
+- `turner18`, representing a subset of 1,253 savanna monkeys from four
   taxa (*C. aethiops* in Ethiopia, *C. pygerythrus hilgerti* in Kenya,
   *C. pygerythrus pygerythrus* in South Africa, and *C. sabaeus* in
   St. Kitts & Nevis), which can be used to replicate the [Turner *et
