@@ -17,7 +17,7 @@ library(tidyverse)
 #library(vervets)
 ```
 
-# vervets <a href='https://fuzzyatelin.github.io/vervets/'><img src='man/figures/vervets_badge_bw.png' align="right" height="138.5" /></a>
+# vervets <a href='https://fuzzyatelin.github.io/vervets/'><img src='man/figures/vervets_badge_bg.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -76,6 +76,8 @@ head(vervets_raw)
 Both datasets contain, in all, information on sample and data availability for 2,315 savanna monkeys that have been sampled by the IVRC from across Africa and the Caribbean.
 
 Our hope is that you can use this package to design experiments with the IVRC data (and not just *in silico* with the in-package datasets, although we hope you'll do that too). The `vervets` dataset is here to help you design and generate potential research proposals that take advantage of our extensive sample archives, as well.
+
+For example, by visualizing the sample size of individuals from particular collection locations that have shared sample types available:
 
 ![](img/vervsamples_ucla.png)
 

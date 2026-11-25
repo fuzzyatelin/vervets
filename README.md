@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# vervets <a href='https://fuzzyatelin.github.io/vervets/'><img src='man/figures/vervets_badge_bw.png' align="right" height="138.5" /></a>
+# vervets <a href='https://fuzzyatelin.github.io/vervets/'><img src='man/figures/vervets_badge_bg.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
@@ -112,6 +112,9 @@ IVRC data (and not just *in silico* with the in-package datasets,
 although we hope you’ll do that too). The `vervets` dataset is here to
 help you design and generate potential research proposals that take
 advantage of our extensive sample archives, as well.
+
+For example, by visualizing the sample size of individuals from
+particular collection locations that have shared sample types available:
 
 ![](img/vervsamples_ucla.png)
 
