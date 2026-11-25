@@ -13,7 +13,16 @@ The \emph{turner18} and \emph{turner97} datasets contain the same data but are s
 \format{
   A data frame with 2197 observations on the following 28 variables.
   \describe{
-    \item{\code{animal_id}}{Animal IDs are unique IDs given to each sampled savanna monkey. To avoid replication of numbers, samples collected in Ethiopia in the 1970s and in South Africa prior to 2009 were given a prefix ("TT", for Trudy Turner). In those samples, population/group membership is delineated by the letter(s), with unique numbers for each individual within a given population/group. Subsequent collections in Kenya in the 1970s use the naming convention 'V' for vervet, 'K' for Kenya, 'A:D' for population, and then numbers 'XXXX', which are unique for each monkey. Collections by UCLA and afterwards use the naming convention 'V' for vervet, 'WW' a one-or-two-letter code indicating nation of origin, 'X' a one-letter code indicating a unique trapping location or population within country, and 'YZZZ' being a unique number assigned to each monkey wherein 'Y' is generally an indicator of a unique social group within a given trapping location. Monkey IDs from the St. Kitts Biomedical Research Foundation are prefaced with 'SKBRF' and followed by that monkey's colony ID from the Foundation, and wild-trapped monkeys from St. Kitts & Nevis are prefaced by 'VWP' and followed by a number '0:1' indicating island of origin, and then a unique number 'XXXX' assigned to each monkey.}
+    \item{\code{animal_id}}{
+    Animal IDs are unique IDs given to each sampled savanna monkey.
+
+    To avoid replication of numbers, samples collected in Ethiopia in the 1970s and in South Africa prior to 2009 were given a prefix ("TT", for Trudy Turner). In those samples, population/group membership is delineated by the letter(s), with unique numbers for each individual within a given population/group.
+
+    Subsequent collections in Kenya in the 1970s use the naming convention 'V' for vervet, 'K' for Kenya, 'A:D' for population, and then numbers 'XXXX', which are unique for each monkey.
+
+    Collections by UCLA and afterwards use the naming convention 'V' for vervet, 'WW' a one-or-two-letter code indicating nation of origin, 'X' a one-letter code indicating a unique trapping location or population within country, and 'YZZZ' being a unique number assigned to each monkey wherein 'Y' is generally an indicator of a unique social group within a given trapping location.
+
+    Monkey IDs from the St. Kitts Biomedical Research Foundation are prefaced with 'SKBRF' and followed by that monkey's colony ID from the Foundation, and wild-trapped monkeys from St. Kitts & Nevis are prefaced by 'VWP' and followed by a number '0:1' indicating island of origin, and then a unique number 'XXXX' assigned to each monkey.}
     \item{\code{sex}}{Sex as estimated by genital inspection and/or presence of secondary sexual characteristics.}
     \item{\code{dental_age}}{Dental age category as estimated by eruption status of permanent adult dentition. See Table 2 in Turner et al., 2018 for a clear outline of which teeth indicate which age category.}
     \item{\code{age_chron_est}}{Estimated age, in months, based on mean estimated time of eruption for indicator teeth. See Table 2 in Turner et al., 2018 for associated ranges.}
