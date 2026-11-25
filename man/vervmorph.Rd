@@ -2,11 +2,12 @@
 \alias{vervmorph}
 \docType{data}
 \title{
-Worldwide savanna monkey (*Chlorocebus* spp.) body measures
+Worldwide savanna monkey (\emph{Chlorocebus} spp.) body measures
 }
 \description{
 A subset of the IVRC morphometic data documenting mass, body, and limb segment lengths for over 2,000 wild and captive vervet monkeys.
-`turner18` and `turner97` contain the same data but are subsetted to only contain those individual monkeys and columns unique to those analyses for replication purposes.
+
+The \emph{turner18} and \emph{turner97} datasets contain the same data but are subsetted to only contain those individual monkeys and columns unique to those analyses for replication purposes.
 }
 \usage{data("vervmorph")}
 \format{
@@ -49,8 +50,9 @@ A subset of the IVRC morphometic data documenting mass, body, and limb segment l
 Schmitt, C. A., Turner, T. R., Cramer, J. D., Lorenz, J., Grobler, J. P., Jolly, C. J., & Freimer, N. B. (2021). Worldwide savanna monkey (\emph{Chlorocebus} spp.) body measures. \url{https://datadryad.org/dataset/doi:10.5061/dryad.vt4b8gtss}
 }
 \references{
-\item{1}{Turner, T. R., Schmitt, C. A., Cramer, J. D., Lorenz, J., Grobler, J. P., Jolly, C. J., & Freimer, N. B. (2018). Morphological variation in the genus \emph{Chlorocebus}: Ecogeographic and anthropogenically mediated variation in body mass, postcranial morphology, and growth. \emph{American Journal of Physical Anthropology} 166(3): 682-707. \url{https://doi.org/10.1002/ajpa.23459}}
-\item{2}{Turner, T. R., Anapol, F. & Jolly C. J. (1997). Growth, development, and sexual dimorphism in vervet monkeys (\emph{Cercopithecus aethiops}) at four sites in Kenya. \emph{American Journal of Physical Anthropology} 103: 19-35.}
+Turner, T. R., Schmitt, C. A., Cramer, J. D., Lorenz, J., Grobler, J. P., Jolly, C. J., & Freimer, N. B. (2018). Morphological variation in the genus \emph{Chlorocebus}: Ecogeographic and anthropogenically mediated variation in body mass, postcranial morphology, and growth. \emph{American Journal of Physical Anthropology} 166(3): 682-707. \url{https://doi.org/10.1002/ajpa.23459}
+
+Turner, T. R., Anapol, F. & Jolly C. J. (1997). Growth, development, and sexual dimorphism in vervet monkeys (\emph{Cercopithecus aethiops}) at four sites in Kenya. \emph{American Journal of Physical Anthropology} 103: 19-35.
 }
 \examples{
 data(vervmorph)
