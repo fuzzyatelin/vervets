@@ -1,12 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# vervets
+# vervets <a href='https://fuzzyatelin.github.io/vervets/'><img src='man/figures/vervets_badge_uwcol.png' align="right" height="138.5" /></a>
 
 <!-- badges: start -->
 <!-- badges: end -->
-
-![](img/humbert_soetdoring.png)
 
 The goal of ‘vervets’ is to provide users with an easy and simple way to
 learn about and use the extensive datasets and samples of wild savanna
@@ -26,14 +24,7 @@ package will make clear when it needs to link out to external resources
 This package is currently in the early stages of development, so more to
 come!
 
-Please note that the data contained in the *vervets* package are
-released under the terms of a Creative Commons Zero (CC0) waiver. In
-doing so, we concur with Dryad’s logic regarding why this was chosen,
-which you can read more about
-[here](https://blog.datadryad.org/2011/10/05/why-does-dryad-use-cc0/).
-In keeping with the norms of our academic discipline, we humbly ask that
-you cite any associated papers when using data from *vervets* in your
-own publications.
+![](img/humbert_soetdoring.png)
 
 ## Installation
 
@@ -379,6 +370,17 @@ users to links to:
 Please do not ask the package maintainers regarding when those data will
 be added; package updates will make it clear when they have become
 available!
+
+## License
+
+Please note that the data contained in the *vervets* package are
+released under the terms of a Creative Commons Zero (CC0) waiver. In
+doing so, we concur with Dryad’s logic regarding why this was chosen,
+which you can read more about
+[here](https://blog.datadryad.org/2011/10/05/why-does-dryad-use-cc0/).
+In keeping with the norms of our academic discipline, we humbly ask that
+you cite any associated papers when using data from *vervets* in your
+own publications.
 
 ## Citation
 
