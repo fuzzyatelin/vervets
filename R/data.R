@@ -40,17 +40,59 @@
 #' @references \url{https://doi.org/10.1002/(SICI)1096-8644(199705)103:1%3C19::AID-AJPA3%3E3.0.CO;2-8} \url{https://doi.org/10.1002/ajpa.23459}
 "vervmorph"
 
+#' Population panel for savanna monkeys included in the `gagnon22vcf` dataset
+#'
+#' A file with population data associated with the IVRC SNP data for 73 savanna monkeys in the `gagnon22vcf` dataset.
+#'
+#' Instructions for using this population pane in association with the `gagnon22vcf` dataset for analyses in Gagnon et al. 2022 are available in the associated vignette and on Dryad.
+#'
+#' The larger population panel for 163 savanna monkeys generated for Svardal et al. 2017 is also available in this package as `svardal17pop`.
+#'
+#' @format ## `gagnon22pop`
+#' A data frame with 73 rows and 6 columns:
+#' \describe{
+#'   \item{sample}{This is the equivalent to `animal_id`. These are unique IDs given to each sampled savanna monkey. To avoid replication of numbers, samples collected in Ethiopia in the 1970s and in South Africa prior to 2009 were given a prefix ("TT", for Trudy Turner). In those samples, population/group membership is delineated by the letter(s), with unique numbers for each individual within a given population/group. Subsequent collections in Kenya in the 1970s use the naming convention 'V' for vervet, 'K' for Kenya, 'A:D' for population, and then numbers 'XXXX', which are unique for each monkey. Collections by UCLA and afterwards use the naming convention 'V' for vervet, 'WW' a one-or-two-letter code indicating nation of origin, 'X' a one-letter code indicating a unique trapping location or population within country, and 'YZZZ' being a unique number assigned to each monkey wherein 'Y' is generally an indicator of a unique social group within a given trapping location. Monkey IDs from the St. Kitts Biomedical Research Foundation are prefaced with 'SKBRF' and followed by that monkey's colony ID from the Foundation, and wild-trapped monkeys from St. Kitts & Nevis are prefaced by 'VWP' and followed by a number '0:1' indicating island of origin, and then a unique number 'XXXX' assigned to each monkey.}
+#'   \item{pop}{A generic population distinction used in larger analyses.}
+#'   \item{region}{This is a regional indicator midway between country and group. These may be based on geo-political divisions or rougher regional divisions based on local ecogeographic variation.}
+#'   \item{country}{Country in which each monkey was trapped.}
+#'   \item{taxon}{Currently accepted species or subspecies status, based on Groves 2001. These taxa are in dispute, and may be updated in subsequent package versions. For simplicity in graphical data representations, only the lowest-level taxonomic category - species or subspecies - is included here.}
+#'   \item{population}{Population designations for savanna monkeys in the southern expansion as used in Gagnon et al. 2022}
+#' }
+#' @source <https://datadryad.org/dataset/doi:10.5061/dryad.k3j9kd59z>
+#' @references \url{https://doi.org/10.1098/rspb.2022.1254} \url{https://doi.org/10.1038/ng.3980}
+"gagnon22pop"
+
 #' Variant calls in the \emph{UCP1} gene region for savanna monkeys (\emph{Chlorocebus} spp.)
 #'
-#' A VCF file representing a subset of the IVRC SNP data around the \emph{UCP1} gene region for savanna monkeys representing the southern expansion of the genus from Kenya through South Africa.
+#' A VCF file representing a subset of the IVRC SNP data around the \emph{UCP1} gene region for 73 savanna monkeys representing the southern expansion of the genus from Kenya through South Africa.
 #'
 #' The whole genome VCF data for 163 savanna monkeys generated for Svardal et al. 2017 are too large to be included in the package, but can be downloaded from the European Variation Archive under accession PRJEB22988 \url{https://www.ebi.ac.uk/eva/?eva-study=PRJEB22988}
 #'
 #' Instructions for using this VCF to isolate particular regions of the genome for analysis comparable to Gagnon et al. 2022 are available in the associated vignette and on Dryad.
 #'
 #' @format ## `gagnon22vcf`
-#' A VCF file containing 826 variants in the \emph{UCP1} gene region - 7:87482195-87512665 - for 82 savanna monkeys
+#' A file containing 826 variants in the \emph{UCP1} gene region - 7:87482195-87512665 - for 73 savanna monkeys
 #'
 #' @source <https://datadryad.org/dataset/doi:10.5061/dryad.k3j9kd59z>
-#' @references \url{https://doi.org/10.1098/rspb.2022.1254}
+#' @references \url{https://doi.org/10.1098/rspb.2022.1254} \url{https://doi.org/10.1038/ng.3980}
 "gagnon22vcf"
+
+#' Population panel for whole genome savanna monkey sequences from Svardal et al. 2017
+#'
+#' A file with population data associated with the IVRC SNP data for 163 savanna monkeys whole genome sequenced analyzed in Svardal et al. 2017.
+#'
+#' Instructions for using this population panel in association with the Svardal dataset for analyses are available in the vignette.
+#'
+#' @format ## `svardal17pop`
+#' A data frame with 163 rows and 6 columns:
+#' \describe{
+#'   \item{sample}{This is the equivalent to `animal_id`. These are unique IDs given to each sampled savanna monkey. To avoid replication of numbers, samples collected in Ethiopia in the 1970s and in South Africa prior to 2009 were given a prefix ("TT", for Trudy Turner). In those samples, population/group membership is delineated by the letter(s), with unique numbers for each individual within a given population/group. Subsequent collections in Kenya in the 1970s use the naming convention 'V' for vervet, 'K' for Kenya, 'A:D' for population, and then numbers 'XXXX', which are unique for each monkey. Collections by UCLA and afterwards use the naming convention 'V' for vervet, 'WW' a one-or-two-letter code indicating nation of origin, 'X' a one-letter code indicating a unique trapping location or population within country, and 'YZZZ' being a unique number assigned to each monkey wherein 'Y' is generally an indicator of a unique social group within a given trapping location. Monkey IDs from the St. Kitts Biomedical Research Foundation are prefaced with 'SKBRF' and followed by that monkey's colony ID from the Foundation, and wild-trapped monkeys from St. Kitts & Nevis are prefaced by 'VWP' and followed by a number '0:1' indicating island of origin, and then a unique number 'XXXX' assigned to each monkey.}
+#'   \item{pop}{A generic population distinction used in larger analyses.}
+#'   \item{region}{This is a regional indicator midway between country and group. These may be based on geo-political divisions or rougher regional divisions based on local ecogeographic variation.}
+#'   \item{country}{Country in which each monkey was trapped.}
+#'   \item{taxon}{Currently accepted species or subspecies status, based on Groves 2001. These taxa are in dispute, and may be updated in subsequent package versions. For simplicity in graphical data representations, only the lowest-level taxonomic category - species or subspecies - is included here.}
+#'   \item{population}{Population designations for savanna monkeys in the southern expansion as used in Gagnon et al. 2022}
+#' }
+#' @source <https://www.ebi.ac.uk/eva/?eva-study=PRJEB22988>
+#' @references \url{https://doi.org/10.1038/ng.3980}
+"svardal17pop"
