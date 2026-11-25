@@ -38,19 +38,7 @@ pak::pak("fuzzyatelin/vervets")
 
 ## About the Data
 
-<div class="wrap">
-
-<img src="img/vervet_map.png" alt="IVRC collection sites, from Turner et al. (2018)">
-
-</div>
-
-<style type="text/css">
-.wrap {
-    float: right;
-    width: 350px;
-    margin: 0px 0px -15px 10px;
-}
-</style>
+<img src="img/vervet_map.png" alt="IVRC collection sites, from Turner et al. (2018)" align="right" style="margin-left: 10px; width: 350px;">
 
 The IVRC data represent body measurements, photographs, and a
 comprehensive set of biological samples and their derived data (i.e.,
@@ -78,6 +66,10 @@ between these two identifiers is important given that *data from
 different collections may be subject to different constraints or
 methods*, even if collected on the same monkey at the same research
 site.
+
+<div style="clear: both;">
+
+</div>
 
 Within the ‘vervet’ package itself, there are several datasets, from
 which we’ve derived a several helpful subsets to walk you through the
