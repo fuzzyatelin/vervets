@@ -80,7 +80,7 @@ These numerous datasets are linked by two important indexing numbers.
 The first is an `animal_id`, which identifies individual monkeys and
 allows you to link numerous potential datasets that are derived from
 measurements or samples collected on that individual monkey. The second
-is a `collection_id`, which identifies a particular research effort or
+is a `collection`, which identifies a particular research effort or
 field season that resulted in the collection of associated sets of
 measurements, biological samples, and downstream data. The distinction
 between these two identifiers is important given that *data from
