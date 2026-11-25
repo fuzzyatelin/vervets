@@ -1,8 +1,8 @@
-#' Worldwide savanna monkey (*Chlorocebus* spp.) body measures
+#' Worldwide savanna monkey (\emph{Chlorocebus} spp.) body measures
 #'
 #' A subset of the IVRC morphometic data documenting mass, body, and limb segment lengths for over 2,000 wild and captive vervet monkeys.
 #'
-#' `turner18` and `turner97` contain the same data but are subsetted to only contain those individual monkeys and columns unique to those analyses for replication purposes.
+#' The `turner18` and `turner97` datasets contain the same data but are subsetted to only contain those individual monkeys and columns unique to those analyses for replication purposes.
 #'
 #' @format ## `vervmorph`
 #' A data frame with 2,197 rows and 28 columns:
@@ -39,3 +39,18 @@
 #' @source <https://datadryad.org/dataset/doi:10.5061/dryad.vt4b8gtss>
 #' @references \url{https://doi.org/10.1002/(SICI)1096-8644(199705)103:1%3C19::AID-AJPA3%3E3.0.CO;2-8} \url{https://doi.org/10.1002/ajpa.23459}
 "vervmorph"
+
+#' Variant calls in the \emph{UCP1} gene region for savanna monkeys (\emph{Chlorocebus} spp.)
+#'
+#' A VCF file representing a subset of the IVRC SNP data around the \emph{UCP1} gene region for savanna monkeys representing the southern expansion of the genus from Kenya through South Africa.
+#'
+#' The whole genome VCF data for 163 savanna monkeys generated for Svardal et al. 2017 are too large to be included in the package, but can be downloaded from the European Variation Archive under accession PRJEB22988 \url{https://www.ebi.ac.uk/eva/?eva-study=PRJEB22988}
+#'
+#' Instructions for using this VCF to isolate particular regions of the genome for analysis comparable to Gagnon et al. 2022 are available in the associated vignette and on Dryad.
+#'
+#' @format ## `gagnon22vcf`
+#' A VCF file containing 826 variants in the \emph{UCP1} gene region - 7:87482195-87512665 - for 82 savanna monkeys
+#'
+#' @source <https://datadryad.org/dataset/doi:10.5061/dryad.k3j9kd59z>
+#' @references \url{https://doi.org/10.1098/rspb.2022.1254}
+"gagnon22vcf"
