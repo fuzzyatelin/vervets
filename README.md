@@ -117,19 +117,7 @@ that, in addition to addressing novel research questions, may be used to
 teach and/or replicate key analyses from papers published by IVRC
 members.
 
-<div class="wrap1">
-
-<img src="img/vervet_measures.png">
-
-</div>
-
-<style type="text/css">
-.wrap1 {
-    float: left;
-    width: 200px;
-    margin: 25px 30px 25px 1px;
-}
-</style>
+<img src="img/vervet_measures.png" alt="IVRC morphometic measures, from Turner et al. (1997)" align="left" style="margin-right: 15px; margin-top: 15px; width: 250px;">
 
 These include `vervmorph`, a comprehensive morphological dataset,
 sourced from our published dataset on
@@ -143,10 +131,17 @@ head(vervmorph)
 And two subsidiary datasets derived from published IVRC analyses that
 can be used for teaching and replication:
 
+<div style="clear: both;">
+
+</div>
+
 - `turner97`, representing a subset of 367 vervet monkeys from four
   sites in Kenya, which can be used to replicate the [Turner *et al.*
   (1997)](https://doi.org/10.1002/(SICI)1096-8644(199705)103:1%3C19::AID-AJPA3%3E3.0.CO;2-8)
   paper on vervet monkey body size and growth.
+
+<img src="img/turner_massmorph.png" alt="Growth modeled for body pass from IVRC morphometic measures, from Turner et al. (2018)" align="right" style="margin-left: 10px; margin-top: 10px; width: 400px;">
+
 - `turner18`, representing a subset of 1,253 savanna monkeys from four
   taxa (*C. aethiops* in Ethiopia, *C. pygerythrus hilgerti* in Kenya,
   *C. pygerythrus pygerythrus* in South Africa, and *C. sabaeus* in
@@ -155,6 +150,10 @@ can be used for teaching and replication:
   monkey body size and growth across their whole range (see [Schmitt *et
   al.* (2021)](https://doi.org/10.5061/dryad.vt4b8gtss) for associated R
   code).
+
+<div style="clear: both;">
+
+</div>
 
 For the collection of these morphological datasets, we follow the
 protocol recommendations of the [Bones and Behavior Working
@@ -165,31 +164,28 @@ Turner *et al.* (1997), and further described by Turner *et al.* (2018).
 
 ### Genetic/Genomic Datasets
 
-<div class="wrap2">
-
-<img src="img/vervet_genomics.png" alt="Vervet genomic variation in *UCP1*, from Gagnon *et al.* (2022)">
-
-</div>
-
-<style type="text/css">
-.wrap2 {
-    float: right;
-    width: 400px;
-    margin: 0px 0px 0px 10px;
-}
-</style>
+<img src="img/gagnon_genomics.png" alt="Vervet genetic variation in *UCP1*, from Gagnon *et al.* (2022)" align="right" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px; width: 400px;">
 
 One of the key foci of the IVRC was to develop savanna monkeys as a
-genetic/genomic resource. In fact, we chose savanna monkeys in part due
-to their relatively unique population history, which makes them
-particularly compelling as a genetic model system. This includes their
-wide ecogeographic range across Africa, of course, but also a key
-bottleneck that occurred when green monkeys (*Chlorocebus sabaeus*) were
-opportunistically brought to the Caribbean from West Africa ~400 years
-ago. These monkeys quickly adapted to the islands and soon took root,
-but with very reduced genetic diversity, making them a great system in
-which to establish connections between trait variation and the genetic
-variation that might underlie it.
+genetic/genomic resource, for both biomedical and evolutionary biology
+research. We chose savanna monkeys, in part, due to their relatively
+unique population history, which makes them particularly compelling as a
+genetic model system. This includes their wide ecogeographic range
+across Africa, occupying riparian forests in savannah landscapes in
+highly variable climates south of the Sahara from The Gambia across the
+Sahel to Kenya, and from Ethiopia to South Africa along the Indian Ocean
+coast - the result of rapid expansion and diversification from their
+origins West Africa during the Plio-Pleistocene; this also includes a
+key bottleneck that occurred when green monkeys (*Chlorocebus sabaeus*)
+were opportunistically brought to the Caribbean from West Africa ~400
+years ago. These monkeys quickly adapted to the islands and soon took
+root, but with very reduced genetic diversity, making them a great
+system in which to establish connections between trait variation and the
+genetic variation that might underlie it.
+
+<div style="clear: both;">
+
+</div>
 
 #### Captive Genetic/Genomic Data
 
@@ -205,11 +201,13 @@ the initial founding of the colony. With over 1,000 monkeys pedigreed,
 system for investigating genetic links to behavior and biology,
 particularly in biomedical contexts. The VRC data, however, are
 generally not publicly available and so are not available in this
-package. Contact [Matt
+package. Contact [Dr. Matt
 Jorgensen](https://school.wakehealth.edu/faculty/j/matthew-j-jorgensen)
 at the VRC for questions regarding access to these datasets.
 
 #### Wild Genetic/Genomic Data
+
+![](img/svardal_genomics.png)
 
 The IVRC has generated both a [reference sequence (ChlSab
 1.1)](https://pubmed.ncbi.nlm.nih.gov/26377836/) and [whole genome
@@ -270,7 +268,7 @@ package is to help make other researchers aware of the samples
 available, and encourage them to design potential experiments with
 available archived samples so that they might be put to use!
 
-At the moment, we have three major sample archives, each with numerous
+At the moment, we have four major sample archives, each with numerous
 sample types:
 
 - **The International Vervet Research Consortium Sample Archive** is
@@ -289,7 +287,7 @@ sample types:
   spun down plasma, spun down serum), tissue samples (3mm ear punches),
   and microbiome swabs (vaginal, rectal, tongue, buccal, nasal), and
   fecal samples stored in both RNAlater and ethanol. Currently, this
-  sample archive is under the curation of [Anna
+  sample archive is under the curation of [Dr. Anna
   Jasinska](https://www.profiles.dom.pitt.edu/faculty_info.aspx/Jasinska7405)
   (University of Pittsburgh). Associated hair samples and dried blood
   spots from these collections are held at Boston University in the
