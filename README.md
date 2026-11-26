@@ -32,8 +32,8 @@ You can install the development version of *vervets* from
 [GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("pak")
-pak::pak("fuzzyatelin/vervets")
+# install.packages("remotes")
+remotes::install_github("fuzzyatelin/vervets")
 ```
 
 ## About the Data
