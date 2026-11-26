@@ -6,9 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ‘vervets’ is to provide users with an easy and simple way to
+The goal of *vervets* is to provide users with an easy and simple way to
 learn about and use the extensive datasets and samples of wild savanna
-monkeys (*Chlorocebus* spp., also commonly called ‘vervets’) generated
+monkeys (*Chlorocebus* spp., also commonly called “vervets”) generated
 by the **International Vervet Research Consortium (IVRC)**.
 
 In this package, you’ll find datasets for both teaching and exploration,
@@ -28,7 +28,7 @@ come!
 
 ## Installation
 
-You can install the development version of vervets from
+You can install the development version of *vervets* from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -52,28 +52,31 @@ Schmitt](https://www.evopropinquitous.net) and founder [Dr. Trudy
 Turner](https://uwm.edu/anthropology/people/turner-trudy-r/). You can
 learn more about how the data were collected in one of the IVRC’s
 summary papers by [Jasinska *et al.*
-(2013)](https://doi.org/10.1093/ilar/ilt049), or in our book, [*Savanna
-Monkeys*](https://doi.org/10.1017/9781139019941).
+(2013)](https://doi.org/10.1093/ilar/ilt049), in our book, [*Savanna
+Monkeys*](https://doi.org/10.1017/9781139019941), and the associated
+publication for this package by [Schmitt *et al.* (2027)]().
 
-These numerous datasets are linked by two important indexing numbers.
-The first is an `animal_id`, which identifies individual monkeys and
-allows you to link numerous potential datasets that are derived from
-measurements or samples collected on that individual monkey. The second
-is a `collection`, which identifies a particular research effort or
-field season that resulted in the collection of associated sets of
-measurements, biological samples, and downstream data. The distinction
-between these two identifiers is important given that *data from
-different collections may be subject to different constraints or
-methods*, even if collected on the same monkey at the same research
+These numerous datasets are linked by two important indexing columns:
+
+- The first is an `animal_id`, which identifies individual monkeys and
+  allows you to link numerous potential datasets that are derived from
+  measurements or samples collected on that individual monkey.
+- The second is a `collection`, which identifies a particular research
+  effort or field season that resulted in the collection of associated
+  sets of measurements, biological samples, and downstream data.
+
+The distinction between these two identifiers is important given that
+*data from different collections may be subject to different constraints
+or methods*, even if collected on the same monkey at the same research
 site.
 
 <div style="clear: both;">
 
 </div>
 
-Within the ‘vervet’ package itself, there are several datasets, from
-which we’ve derived a several helpful subsets to walk you through the
-utility of the vervet data:
+Within the *vervets* package itself, there are several datasets, from
+which we’ve derived several helpful subsets to walk you through the
+utility of the IVRC data:
 
 ``` r
 library(vervets)
@@ -99,16 +102,28 @@ Both datasets contain, in all, information on sample and data
 availability for 2,315 savanna monkeys that have been sampled by the
 IVRC from across Africa and the Caribbean.
 
-Our hope is that you can use this package to design experiments with the
-IVRC data (and not just *in silico* with the in-package datasets,
-although we hope you’ll do that too). The `vervets` dataset is here to
-help you design and generate potential research proposals that take
-advantage of our extensive sample archives, as well.
+Our hope is that you can use the *vervets* package to design experiments
+with the IVRC data (and not just *in silico* with the in-package
+datasets, although we hope you’ll do that too). The `vervets` dataset is
+here to help you design and generate potential research proposals that
+take advantage of our extensive sample archives, as well. Please check
+out `vignette("vervets")` for basic guidance on the overall dataset and
+how to use it for sample queries and project design.
 
-For example, by visualizing the sample size of individuals from
-particular collection locations that have shared sample types available:
+For example, by visualizing the sample size of individuals from a
+particular `collection` that have shared sample types available you
+could design a multi-omics project with whole genome, RNA-seq, and serum
+metabolomic data, the results of which you could validate in a
+fibroblast-based cell line system. Based on our data, you’d have a
+strong sample size for such a project in the vervet collection from
+South Africa in 2010 (n = 199); but not so strong for the vervets
+collection from The Gambia in 2011 (n = 9):
 
 ![](img/vervsamples_ucla.png)
+
+The metadata available within *vervets* will guide you towards whom to
+contact and where the samples are available so that you can take your
+project idea from planning to implementation!
 
 ### Morphological Datasets
 
@@ -122,7 +137,8 @@ members.
 These include `vervmorph`, a comprehensive morphological dataset,
 sourced from our published dataset on
 [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.vt4b8gtss),
-which will be updated with future collections:
+which will be updated with comparable morphological data from future
+collections:
 
 ``` r
 head(vervmorph)
@@ -145,17 +161,18 @@ can be used for teaching and replication:
 - `turner18`, representing a subset of 1,253 savanna monkeys from four
   taxa (*C. aethiops* in Ethiopia, *C. pygerythrus hilgerti* in Kenya,
   *C. pygerythrus pygerythrus* in South Africa, and *C. sabaeus* in
-  St. Kitts & Nevis), which can be used to replicate the [Turner *et
-  al.* (2018)](https://doi.org/10.1002/ajpa.23459) paper on savanna
-  monkey body size and growth across their whole range (see [Schmitt *et
-  al.* (2021)](https://doi.org/10.5061/dryad.vt4b8gtss) for associated R
-  code).
+  St. Kitts & Nevis), which can be used to replicate results from the
+  [Turner *et al.* (2018)](https://doi.org/10.1002/ajpa.23459) paper on
+  variation in savanna monkey body size and growth.
 
 <div style="clear: both;">
 
 </div>
 
-For the collection of these morphological datasets, we follow the
+You can use `vignette("morphometrics")` for guidance on how to access
+and use these morphological datasets.
+
+For the collection of savanna monkey morphological data, we follow the
 protocol recommendations of the [Bones and Behavior Working
 Group](https://wp.nyu.edu/csho/research/bones-and-behavior-working-group/)
 for standardized anthropometric body measurements on living non-human
@@ -164,24 +181,24 @@ Turner *et al.* (1997), and further described by Turner *et al.* (2018).
 
 ### Genetic/Genomic Datasets
 
-<img src="img/gagnon_genomics.png" alt="Vervet genetic variation in *UCP1*, from Gagnon *et al.* (2022)" align="right" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px; width: 400px;">
+<img src="img/gagnon_genomics.png" alt="Vervet genetic variation in UCP1, from Gagnon et al. (2022)" align="right" style="margin-left: 20px; margin-bottom: 20px; margin-top: 10px; width: 400px;">
 
 One of the key foci of the IVRC was to develop savanna monkeys as a
 genetic/genomic resource, for both biomedical and evolutionary biology
 research. We chose savanna monkeys, in part, due to their relatively
 unique population history, which makes them particularly compelling as a
-genetic model system. This includes their wide ecogeographic range
-across Africa, occupying riparian forests in savannah landscapes in
-highly variable climates south of the Sahara from The Gambia across the
-Sahel to Kenya, and from Ethiopia to South Africa along the Indian Ocean
-coast - the result of rapid expansion and diversification from their
-origins West Africa during the Plio-Pleistocene; this also includes a
-key bottleneck that occurred when green monkeys (*Chlorocebus sabaeus*)
-were opportunistically brought to the Caribbean from West Africa ~400
-years ago. These monkeys quickly adapted to the islands and soon took
-root, but with very reduced genetic diversity, making them a great
-system in which to establish connections between trait variation and the
-genetic variation that might underlie it.
+genetic model system. Their wide ecogeographic range across Africa
+presents a variety of evolutionary questions regarding how they manage
+to thrive in riparian forests throughout savannah landscapes in highly
+variable climates south of the Sahara, ranging from The Gambia across
+the Sahel to Kenya, and from Ethiopia to South Africa along the Indian
+Ocean coast (the result of rapid expansion and diversification from
+their West African origins during the Plio-Pleistocene). The reduced
+genetic diversity presented by a key bottleneck that occurred when green
+monkeys (*Chlorocebus sabaeus*) were opportunistically brought to the
+Caribbean from West Africa ~400 years ago additionally makes them a
+great model system in which to establish connections between phenotypic
+trait variation and the genetic variation that might underlie it.
 
 <div style="clear: both;">
 
@@ -189,7 +206,7 @@ genetic variation that might underlie it.
 
 #### Captive Genetic/Genomic Data
 
-A second bottleneck occurred when 67 of those monkeys from St. Kitts
+A second major bottleneck occurred when 67 of monkeys from St. Kitts
 were brought to the United States to create a captive research colony at
 the University of California - Los Angeles in the mid-1970’s. The
 [Vervet Research
@@ -197,13 +214,15 @@ Colony](https://school.wakehealth.edu/departments/pathology/comparative-medicine
 (now housed at the Wake Forest School of Medicine) is a captive breeding
 colony of ~250 green monkeys with an extensive pedigree dating back to
 the initial founding of the colony. With over 1,000 monkeys pedigreed,
-721 of which are whole genome sequenced, the colony is a fantastic
-system for investigating genetic links to behavior and biology,
-particularly in biomedical contexts. The VRC data, however, are
-generally not publicly available and so are not available in this
-package. Contact [Dr. Matt
+721 of which are whole genome sequenced (with many more in process), the
+colony is a fantastic system for investigating genetic links to behavior
+and biology, particularly in biomedical contexts. The VRC data, however,
+are generally not publicly available and so are not currently accessible
+in the *vervets* package.
+
+Contact [Dr. Matt
 Jorgensen](https://school.wakehealth.edu/faculty/j/matthew-j-jorgensen)
-at the VRC for questions regarding access to these datasets.
+for questions regarding access to VRC datasets.
 
 #### Wild Genetic/Genomic Data
 
@@ -211,52 +230,41 @@ at the VRC for questions regarding access to these datasets.
 
 The IVRC has generated both a [reference sequence (ChlSab
 1.1)](https://pubmed.ncbi.nlm.nih.gov/26377836/) and [whole genome
-population resequencing](https://pubmed.ncbi.nlm.nih.gov/29083404/) for
-163 wild savanna monkeys. Including raw sequencing reads in this package
-would make it prohibitively large, but the package includes instructions
-for how to access those raw data for download (i.e., links to SRAs in
-free online repositories) and for accessing the VCF for the whole genome
-data generated by [Svardal et
-al. (2017)](https://pubmed.ncbi.nlm.nih.gov/29083404/), which is
-available on the European Variant Archive
-([PRJEB22988](https://www.ebi.ac.uk/eva/?eva-study=PRJEB22988)), and a
-population panel, `svardal17pop`, for this whole genome VCF file.
+population resequencing data](https://pubmed.ncbi.nlm.nih.gov/29083404/)
+for 163 wild savanna monkeys. Including the raw sequencing reads from
+these efforts in the *vervets* package would make it prohibitively
+large, but the package does include instructions for how to access those
+raw data for download (i.e., links to SRAs in free online repositories)
+and for accessing the VCF for the whole genome data generated by
+[Svardal et al. (2017)](https://pubmed.ncbi.nlm.nih.gov/29083404/),
+which is available on the European Variant Archive
+([PRJEB22988](https://www.ebi.ac.uk/eva/?eva-study=PRJEB22988)). A
+population panel, `svardal17pop`, is included in this package, which can
+be paired with this whole genome VCF file to facilitate phenotype
+matching to the genomic data.
 
-We include in the package a published VCF (Variant Call Format) dataset
-representing population resequencing data in the *UCP1* gene region for
-73 savanna monkeys representing the southern expansion of the genus into
-colder southern Africa, called `Gagnon22vcf`, along with an associated
-vervet population panel file, called `Gagnon22pop`, to link sex and
-population assignments to the VCF data. A vignette based on the analyses
-from [Gagnon *et al.*,
-2022](https://royalsocietypublishing.org/doi/10.1098/rspb.2022.1254) is
-available to guide you though working with the vervet genomic data in
-VCF format. This relatively simple *UCP1* data can be used as a teaching
-dataset for population genetics (see [Schmitt *et al.*
-(2022)](https://doi.org/10.5061/dryad.k3j9kd59z) for associated R code),
-and to prepare you for tackling the larger genomics dataset.
+We also include in the *vervets* package a published VCF (Variant Call
+Format) dataset representing population resequencing data in the *UCP1*
+gene region for 73 savanna monkeys representing the southern expansion
+of the genus into colder southern Africa, called `Gagnon22vcf`, along
+with an associated vervet population panel file, called `Gagnon22pop`,
+to link sex and population assignments to the VCF data.
+`vignette("genomics")` will walk you through the analyses from [Gagnon
+*et al.*,
+2022](https://royalsocietypublishing.org/doi/10.1098/rspb.2022.1254),
+and for working with the vervet genomic data, in general. This
+relatively simple *UCP1* data can be used as a teaching dataset for
+population genetics, and to prepare you for tackling the larger genomics
+dataset.
 
-Similarly derived subsets of the vervet genomic data may also be
+Similarly derived subsets of the vervet genomic data - the collection of
+which may be facilitated by `vignette("genomics")` - may also be
 combined with our other datasets to set up novel analyses of how genetic
 variation may vary across populations in relation to other climatic or
 phenotypic data (as done for heat shock protein *HSPA1L* by [Dippel *et
 al.* 2026](https://www.mdpi.com/2073-4425/17/12/1492)).
 
 ### Biological Sample Repositories
-
-<div class="wrap2">
-
-<img src="img/ivrc_samples.png" alt="IVRC sampling regime, from Turner *et al.* (2019)">
-
-</div>
-
-<style type="text/css">
-.wrap2 {
-    float: right;
-    width: 400px;
-    margin: 0px 0px 0px 10px;
-}
-</style>
 
 When IVRC members trap vervets, we collect a wide variety of biological
 samples to make the most of our efforts. Although many samples are
@@ -267,6 +275,8 @@ that can be used in other analyses. A major goal of the ‘vervets’
 package is to help make other researchers aware of the samples
 available, and encourage them to design potential experiments with
 available archived samples so that they might be put to use!
+
+![](img/ivrc_samples.png)
 
 At the moment, we have four major sample archives, each with numerous
 sample types:
@@ -390,13 +400,12 @@ citation("vervets")
 
 ## Additional Data Use Information
 
-Anyone interested in publishing based on these data are strongly
-encouraged to contact [Dr. Christopher
-Schmitt](https://www.evopropinquitous.net) about analysis and potential
-collaboration on any final products. This is recommended beyond
-appropriate citation of associated literatures because we may know
-nuances about the dataset you’re using that might be important for your
-analyses!
+Anyone interested in publishing based on these data should contact
+[Dr. Christopher Schmitt](https://www.evopropinquitous.net) about
+analysis and potential collaboration on any final products. This is
+recommended beyond appropriate citation of associated literatures
+because we may know nuances about the dataset you’re using that might be
+important for your analyses!
 
 ## References
 
