@@ -169,8 +169,8 @@ can be used for teaching and replication:
 
 </div>
 
-You can use `vignette("morphometrics")` for guidance on how to access
-and use these morphological datasets.
+You can use `vignette("vervet_morphometrics")` for guidance on how to
+access and use these morphological datasets.
 
 For the collection of savanna monkey morphological data, we follow the
 protocol recommendations of the [Bones and Behavior Working
@@ -249,8 +249,8 @@ gene region for 73 savanna monkeys representing the southern expansion
 of the genus into colder southern Africa, called `Gagnon22vcf`, along
 with an associated vervet population panel file, called `Gagnon22pop`,
 to link sex and population assignments to the VCF data.
-`vignette("genomics")` will walk you through the analyses from [Gagnon
-*et al.*,
+`vignette("vervet_genomics")` will walk you through the analyses from
+[Gagnon *et al.*,
 2022](https://royalsocietypublishing.org/doi/10.1098/rspb.2022.1254),
 and for working with the vervet genomic data, in general. This
 relatively simple *UCP1* data can be used as a teaching dataset for
@@ -258,7 +258,7 @@ population genetics, and to prepare you for tackling the larger genomics
 dataset.
 
 Similarly derived subsets of the vervet genomic data - the collection of
-which may be facilitated by `vignette("genomics")` - may also be
+which may be facilitated by `vignette("vervet_genomics")` - may also be
 combined with our other datasets to set up novel analyses of how genetic
 variation may vary across populations in relation to other climatic or
 phenotypic data (as done for heat shock protein *HSPA1L* by [Dippel *et
