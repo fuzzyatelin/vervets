@@ -1,6 +1,6 @@
 Package: vervets
 Type: Package
-Title: Access and Analyze the International Vervet Research Consortium Datasets
+Title: International Vervet Research Consortium Samples and Datasets
 Version: 0.1.0
 Authors@R: c(person(
       "Christopher", "Schmitt",
